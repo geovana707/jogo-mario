@@ -13,11 +13,10 @@ body,html{height:100%;font-family:Arial, Helvetica, sans-serif;background:#7fb7c
   border-bottom:5px solid #1e8b4f;
 }
 
-/* HUD (pontuação) */
+
 .hud{position:absolute; top:10px; right:20px; z-index:6; color:#fff; font-weight:bold; font-size:20px}
 .hud #score{background:rgba(0,0,0,0.25); padding:6px 10px; border-radius:6px}
 
-/* Mario e elementos */
 .mario{position:absolute; bottom:0; left:50px; width:100px; z-index:5; user-select:none;}
 
 
@@ -38,12 +37,12 @@ body,html{height:100%;font-family:Arial, Helvetica, sans-serif;background:#7fb7c
     opacity:0.9
 }
 
-/* animação do pulo via classe */
+
 .pulo{
      animation: pulo 500ms ease-out;
     }
 
-/* overlays (abertura e final) */
+
 .overlay{
   position:fixed; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center;
   background: linear-gradient(rgba(10,10,10,0.45), rgba(0,0,0,0.25));
@@ -52,12 +51,12 @@ body,html{height:100%;font-family:Arial, Helvetica, sans-serif;background:#7fb7c
 .overlay h1{font-size:3rem;margin-bottom:10px}
 .overlay p{margin-bottom:20px; opacity:0.9}
 .btn{background:blueviolet;color:aliceblue;border:none;padding:12px 22px;border-radius:10px;cursor:pointer;font-size:1rem}
-.overlay.final{display:none} /* ficará visível só no game over */
+.overlay.final{display:none} 
 
 .moeda {
   position: absolute;
-  bottom: 180px; /* altura do auge do pulo */
-  left: 350px;    /* posição fixa para a moeda */
+  bottom: 180px; 
+  left: 350px;    
   width: 40px;
   z-index: 6;
   user-select: none;
@@ -72,8 +71,8 @@ body,html{height:100%;font-family:Arial, Helvetica, sans-serif;background:#7fb7c
   height: 10px;
   background: gold;
   border-radius: 4px;
-  bottom: 120px; /* começa na altura do Mario, pode ajustar */
-  left: 100px;   /* perto do Mario */
+  bottom: 120px; 
+  left: 100px;   
   z-index: 7;
   pointer-events: none;
   animation: tiroAnim 0.4s forwards;
@@ -104,7 +103,7 @@ body,html{height:100%;font-family:Arial, Helvetica, sans-serif;background:#7fb7c
 }
 
 
-/* keyframes */
+
 @keyframes pulo{
   0%{bottom:0}
   40%,50%,60%{bottom: 190px;}
@@ -119,7 +118,7 @@ body,html{height:100%;font-family:Arial, Helvetica, sans-serif;background:#7fb7c
   to{left:-120px}
 }
 
-/* estilos responsivos */
+
 @media (max-width:600px){
   .mario{width:80px; left:20px}
   .obstaculos{width:60px}
